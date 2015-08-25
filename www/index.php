@@ -1,8 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Yavdat
- * Date: 25.08.2015
- * Time: 2:28
- */
-phpinfo();
+
+require __DIR__ . '/models/photo.php';
+
+$items=Photo_getAll();
+
+include __DIR__ . '/views/index.php';
